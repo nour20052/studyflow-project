@@ -6,10 +6,184 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="icon" href="img/icon.png">
+    <title>Study Flow.Dashboard</title>
 </head>
-<body>
-    
+ <body>
+<nav class="navbar">
+  <div class="container-fluid">
+     <a href="#" class="logo"><i class="fa-solid fa-brain"></i> Study Flow</a>
+         <button class=" d-lg-none mb-3 btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+  </div>
+ </nav>
+       <div class="container-fluid">
+         <div class="row"> 
+         <aside class="sidebar-desktop d-none d-lg-block ms-0 col-lg-2 col-8 p-1 rounded-3 position-relative" id="sidebarMenu">
+         
+          <ul class="nav flex-column ">
+            <li class="nav-item mb-4 mt-3"><a class="nav-link text-white active" href="#"><span class="pe-2"><i class="fa-solid fa-house"></i></span>  Dashboard</a></li>
+            <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-plus"></i></span>  Add task</a></li>
+            <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-regular fa-clipboard"></i></span>  Tasks</a></li>
+            <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-comment"></i></span>  Chats</a></li>
+            <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-list-check"></i></span>  To-Do list</a></li>
+            <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-alarm-clock"></i></span>  Timer</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"><span class="pe-2"><i class="fa-solid fa-circle-user"></i></span> Profile</a> </li>
+          </ul>
+          
+          <div class="text-center  out">
+          <button class="logout  ">Log out</button>
+          </div>
+         </aside>
+         <main class="col-12 col-lg-9 p-4">
+   
+            <div class="col-lg-12 col-md-10 col-12 welcome p-4 rounded-2 mx-auto position-relative overflow-visible ">
+            <div>
+            <h1>Hi,Nour</h1>
+            <p>Ready to start your day clarity,focus,and everything under control with <span class="fw-bold"> Study flow</span></p>
+            </div>
+             <img src="img/to do list.svg" alt="to do list" class="welcome-img img-fluid">
+           </div>
+
+           <div class="container-fluid mt-3 ">
+             <div class="row justify-content-center">
+               <div class="col-lg-3 col-md-5 col-12 card card-goal text-center mb-lg-1 me-2 me-md-2 pt-3 mb-3 ">
+                 <h3>Today's goal</h3>
+                 <div class="progress-circle-goal mx-auto">
+                   <span>75%</span>
+                 </div>
+                 <div class="d-flex justify-content-between mt-4">
+                 <p > <div class="goal mt-1"></div> your goal</p>
+                 <p> <div class="prog mt-1"></div> progress</p>
+                 </div>
+               </div>
+               <div class="col-lg-3 col-md-5 col-12 card card-score text-center me-3 pt-3 mb-lg-1  mb-3">
+                 <h3>Your score</h3>
+                 <div class="progress-circle-score mx-auto">
+                   <span>50%</span>
+                 </div>
+                 <div class="d-flex justify-content-between mt-4">
+                 <p > <div class="course mt-1"></div> All course</p>
+                 <p> <div class=" general mt-1"></div> General</p>
+                 </div>
+               </div>
+               <div class="col-lg-5 col-md-10 col-12 card card-progress mt-lg-0 mt-md-2 mb-2 mb-lg-1 me-2 pt-3">
+                 <h3 class="text-center pb-4">Your progress</h3>
+                 <div class="d-flex">
+                   <div class="col-2 ms-3">
+                  <p>js</p>
+                  </div>
+                  <div class="progress col-8" role="progressbar" >
+                    <div class="progress-bar text-bg-success" style="width: 25%">25%</div>
+                  </div>
+                  </div>
+                  <div class="d-flex">
+                 <div class="col-2 ms-3">
+                  <p>python</p>
+                  </div>
+                  <div class="progress col-8 " role="progressbar">
+                    <div class="progress-bar text-bg-info" style="width: 50%">50%</div>
+                  </div>
+                  </div>
+                  <div class="d-flex">
+                  <div class="col-2 ms-3">
+                  <p>java</p>
+                  </div>
+                  <div class="progress col-8 " role="progressbar" >
+                    <div class="progress-bar text-bg-warning" style="width: 75%">75%</div>
+                  </div>
+                  </div>
+                  <div class="d-flex">
+                   <div class="col-2 ms-3">
+                  <p>css</p>
+                  </div>
+                  <div class="progress col-8" role="progressbar">
+                    <div class="progress-bar text-bg-danger" style="width: 100%">100%</div>
+                  </div>
+                  </div>
+                 </div>
+             </div>
+           </div>
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+             <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             </div>
+           <div class="carousel-inner">
+             <div class="carousel-item active" data-bs-interval="10000">
+      
+
+               <div class="col-11 card slide  mt-2 mx-lg-auto   ">
+                  <div >
+                  <h3>Add Task </h3>
+                  <p>Create and manage your study tasks in seconds</p>
+              </div>
+              <div >
+                 <a href="#"> <button class="but">Add your Task</button></a>
+                 </div>
+               </div>
+
+             </div>
+    <div class="carousel-item" data-bs-interval="2000">
+                  
+
+            <div class=" col-11 card  slide mt-2 mx-lg-auto  ">
+              <div>
+                 <h3>Stay Organized </h3>
+                  <p>Keep all your tasks in one simple place</p>
+              </div>
+                  <a href="#"><button class="but ">To Do list</button></a>
+               </div>
+
+
+    </div>
+             <div class="carousel-item">
+         
+
+               <div class="col-11 card slide  mt-2 mx-lg-auto ">
+                 <div>
+                 <h3 class="fa-bold">Focus Timer </h3>
+                  <p>Stay focused with timed study sessions</p>
+                </div>
+                <div>
+                  <a href="#"><button class="but">start NOW!</button></a>
+                </div>
+               </div>
+
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+          </main>
+
+     <div class="offcanvas offcanvas-start d-lg-none " tabindex="-1" id="mobileSidebar">
+       <aside class="offcanvas-body ">
+         <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white position-fixed " data-bs-dismiss="offcanvas"><span class="navbar-toggler-icon"></span></button>
+         </div>
+         <ul class="nav flex-column ">
+           <li class="nav-item mb-4 mt-3"><a class="nav-link text-white active" href="#"><span class="pe-2"><i class="fa-solid fa-house"></i></span>  Dashboard</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-plus"></i></span>  Add task</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-regular fa-clipboard"></i></span>  Tasks</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-comment"></i></span>  Chats</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-list-check"></i></span>  To-Do list</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-alarm-clock"></i></span>  Timer</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"><span class="pe-2"><i class="fa-solid fa-circle-user"></i></span> Profile</a> </li>
+         </ul>
+       </aside>
+    </div> 
+     
     <script src="js/bootstrap.bundle.js"></script>
 </body>
-</html>
+</html> 
