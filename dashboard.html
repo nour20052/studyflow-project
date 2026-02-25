@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+    <title>Study Flow.Dashboard</title>
+</head>
+ <body>
+<nav class="navbar">
+  <div class="container-fluid justify-content-between">
+     <a href="dashboard.html" class="logo"><i class="fa-solid fa-brain"></i> Study Flow</a>
+    <div >
+      <a href="profile.html"><img src="img/profile.jpg" alt="profile" class="profile-img"></a>
+    </div>
+         <button class=" d-lg-none mb-3 btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileSidebar">
+             <span class="navbar-toggler-icon"></span>
+          </button>
+  </div>
+ </nav>
+
+ <div class="container-fluid">
+         <div class="row"> 
+         <aside class="sidebar-desktop d-none d-lg-block ms-0 col-lg-2 col-8 p-1 rounded-4 position-relative" id="sidebarMenu">
+         
+          <ul class="nav  flex-column ">
+            <li class="nav-item mb-4 mt-3"><a class="nav-link side-dash active " href="dashboard.html"><span class="pe-2"><i class="fa-solid fa-house"></i></span>  Dashboard</a></li>
+            <li class="nav-item mb-4"><a class="nav-link side " href="addtask.html"> <span class="pe-2"><i class="fa-solid fa-plus"></i></span>  Add task</a></li>
+            <li class="nav-item mb-4"><a class="nav-link side" href="#"> <span class="pe-2"><i class="fa-regular fa-clipboard"></i></span>  Tasks</a></li>
+            <li class="nav-item mb-4"><a class="nav-link side" href="#"> <span class="pe-2"><i class="fa-solid fa-comment"></i></span>  Chats</a></li>
+            <li class="nav-item mb-4"><a class="nav-link side" href="#"> <span class="pe-2"><i class="fa-solid fa-list-check"></i></span>  To-Do list</a></li>
+            <li class="nav-item mb-4"><a class="nav-link side" href="#"> <span class="pe-2"><i class="fa-solid fa-alarm-clock"></i></span>  Timer</a></li>
+           
+          </ul>
+
+           <hr>
+          <div >
+          <ul class=" nav  flex-column list-unstyled">
+            
+            <li class="nav-item mb-2 "><a class=" nav-link side " href="#"><span class="pe-2"><i class="fa-solid fa-circle-user"></i></span> Profile</a> </li>
+            <li class="nav-item mb-2 "><a class="side nav-link " href="#"><span class="pe-2"><i class="fa-solid fa-gear"></i></span> Settings</a></li>
+            <li class="nav-item mb-2 "><a class="side nav-link " href="#"><span class="pe-2"><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Log out</a></li>
+
+          </ul>
+          </div>
+         </aside>
+         
+      <main class="  col-12 col-lg-8 p-4  bg-body-tertiary rounded-4">
+   
+            <div class="col-lg-9 col-md-10 col-12 welcome p-4 rounded-2  position-relative overflow-visible ">
+            <div>
+            <h1>Hi,Nour</h1>
+            <p>Ready to start your day clarity,focus,and everything under control with <span class="fw-bold"> Study flow</span></p>
+            </div>
+             <img src="img/focused.svg" alt="to do list" class="welcome-img img-fluid">
+            </div>
+
+           <div class="container-fluid mt-3 ">
+             <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-5 col-12 card-goal  text-center mb-lg-1 ms-lg-1 me-2 me-md-2 pt-3 mb-3 ">
+                 <h3 class="fs-4">Today's goal</h3>
+                 <div class="d-flex  align-item-center ">
+                  <div>
+                  <ul class="list-unstyled gap-5">
+                    <li class="d-flex gap-2 my-5 mt-3 ms-2"><div class="goal mt-1 ms-2"></div> <span>Your goal</span></li>
+                    <li class="d-flex gap-2 ms-2 "><div class="prog mt-1 ms-2"></div><span>Progress </span></li>
+                  </ul>
+                 </div>
+                  <div class="progress-circle-goal   ms-5 mt-2 position-relative ">
+                   <span>75%</span>
+                 </div> 
+                 
+                 </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 card-score text-center me-3 pt-3 ms-lg-1 mb-lg-1  mb-3">
+                 <h3 class="fs-4">Your score</h3>
+                  <div class="d-flex  align-item-center">
+                 <div >
+                 <ul class="list-unstyled gap-5">
+                    <li class="d-flex gap-2 my-5 mt-3 ms-2"><div class="general mt-1 ms-2"></div> <span>General</span></li>
+                    <li class="d-flex gap-2 ms-2 "><div class="course mt-1 ms-2"></div><span>Course </span></li>
+                  </ul>
+                 </div>
+                 <div class="progress-circle-score   ms-5 mt-2 position-relative">
+                   <span>83%</span>
+                 </div>
+                 </div>
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 card-assignment text-center  pt-3 mb-lg-1  mb-3">
+                 <h3 class="fs-5">Assignment completion</h3>
+                  <div class="d-flex  align-item-center">
+                 <div >
+                 <ul class="list-unstyled gap-5">
+                    <li class="d-flex gap-2 my-5 mt-3 ms-2"><div class="submitted mt-1 ms-2"></div> <span>submitted</span></li>
+                    <li class="d-flex gap-2 ms-2 "><div class="pending mt-1 ms-2"></div><span>Pending</span></li>
+                  </ul>
+                 </div>
+                 <div class="progress-circle-assignment  ms-5 mt-2 position-relative">
+                   <span>68%</span>
+                 </div>
+                 </div>
+                </div>
+               
+             </div>
+           </div>
+        <div class="d-flex foot">
+        <div class="col-lg-4 col-md-4 col-12 mt-3 ms-3 slide ">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+        
+             <div class="carousel-inner ">
+            <div class="carousel-item active" data-bs-interval="6000">
+              <img src="img/q1.jpeg" class=" quote " alt="...">             
+            </div>
+            <div class="carousel-item " data-bs-interval="6000">
+              <img src="img/q2.jpeg" class=" quote" alt="...">            
+            </div>
+            <div class="carousel-item " data-bs-interval="6000">
+              <img src="img/q3.jpeg" class=" quote" alt="...">              
+            </div>
+            <div class="carousel-item " data-bs-interval="6000">
+              <img src="img/q4.jpeg" class=" quote" alt="...">             
+            </div>
+            <div class="carousel-item" data-bs-interval="6000">
+              <img src="img/q5.jpeg" class=" quote" alt="...">             
+            </div>
+            <div class="carousel-item">
+              <img src="img/q6.jpeg" class=" quote" alt="...">
+            </div>
+             </div>
+             <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span  aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+             </button>
+             <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+             </button> -->
+         </div>
+        </div>
+        <div class="cont col-lg-8 col-md-6 col-12 ms-0 mt-3 rounded-4">
+          
+
+     <div class="  chart-div shadow-sm p-2 ps-4 pe-4 text-center " >
+  
+      
+
+
+  <h5 class="fw-bold mb-4 text-center">Weekly Productivity</h5>
+
+  <div class="d-flex">
+
+    <div class="hours d-flex flex-column justify-content-between me-2">
+      <div>12</div>
+      <div>10</div>
+      <div>8</div>
+      <div>6</div>
+      <div>4</div>
+      <div>2</div>
+      <div>0</div>
+    </div>
+
+    <div class="flex-grow-1">
+      <div class="chart d-flex justify-content-between align-items-end">
+        <div class="bar ms-lg-5" style="height:60px;"></div>
+        <div class="bar" style="height:100px;"></div>
+        <div class="bar" style="height:80px;"></div>
+        <div class="bar" style="height:140px;"></div>
+        <div class="bar" style="height:90px;"></div>
+        <div class="bar" style="height:120px;"></div>
+        <div class="bar" style="height:70px;"></div>
+      </div>
+
+      <!-- الأيام -->
+      <div class="labels d-flex justify-content-between mt-2">
+        <div class="ms-lg-5">Sat</div>
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+        </div>
+        
+                  
+        </div>
+       
+
+
+      </main>
+      <aside class="timeline-sidebar col-2 p-3 me-0 ">
+  
+  <div class="d-flex align-items-center gap-3 mb-3">
+    <div class="cal-icon d-flex align-items-center">
+    <p><i class="fa-solid fa-list-check"></i></p> 
+    </div>
+    <div class="ms-4">
+      <div class="fw-semibold">May 22, 2026</div>
+      <small class="text-muted">Today schedule</small>
+    </div>
+  </div>
+
+  
+  <div class="day-group">
+    <div class="day-title">Uni</div>
+
+    <div class="event">
+      <span class="dot dot-green"></span>
+      <div class="time">10:00</div>
+      <div class="desc">
+        <div class="fw-semibold">Section Os</div>
+        <small class="text-muted">section 1,2</small>
+      </div>
+    </div>
+
+    <div class="event">
+      <span class="dot dot-red"></span>
+      <div class="time">14:50</div>
+      <div class="desc">
+        <div class="fw-semibold">Lorem</div>
+        <small class="text-muted">Lorem Ipsum Dolor</small>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="day-group">
+    <div class="day-title">Course</div>
+
+    <div class="event">
+      <span class="dot dot-green"></span>
+      <div class="time">08:00</div>
+      <div class="desc">
+        <div class="fw-semibold">Lorem</div>
+        <small class="text-muted">Lorem Ipsum Dolor</small>
+      </div>
+    </div>
+
+    <div class="event">
+      <span class="dot dot-red"></span>
+      <div class="time">13:30</div>
+      <div class="desc">
+        <div class="fw-semibold">Lorem</div>
+        <small class="text-muted">Lorem Ipsum Dolor</small>
+      </div>
+    </div>
+  </div>
+  <div class="day-group">
+    <div class="day-title">Course</div>
+
+    <div class="event">
+      <span class="dot dot-green"></span>
+      <div class="time">08:00</div>
+      <div class="desc">
+        <div class="fw-semibold">Lorem</div>
+        <small class="text-muted">Lorem Ipsum Dolor</small>
+      </div>
+    </div>
+
+    <div class="event">
+      <span class="dot dot-red"></span>
+      <div class="time">13:30</div>
+      <div class="desc">
+        <div class="fw-semibold">Lorem</div>
+        <small class="text-muted">Lorem Ipsum Dolor</small>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <div class="day-group">
+    <div class="day-title">Quraan</div>
+
+    <div class="event">
+      <span class="dot dot-red"></span>
+      <div class="time">09:45</div>
+      <div class="desc">
+        <div class="fw-semibold">Lorem</div>
+        <small class="text-muted">Lorem Ipsum Dolor</small>
+      </div>
+    </div>
+
+    <div class="event">
+      <span class="dot dot-green"></span>
+      <div class="time">11:25</div>
+      <div class="desc">
+        <div class="fw-semibold">Lorem</div>
+        <small class="text-muted">Lorem Ipsum Dolor</small>
+      </div>
+    </div>
+  </div>
+</aside>
+
+     <div class="offcanvas offcanvas-start d-lg-none " tabindex="-1" id="mobileSidebar">
+       <aside class="offcanvas-body  ">
+         <div class="offcanvas-header">
+          <button type="button" class="btn-close btn-close-white position-fixed " data-bs-dismiss="offcanvas"><span class="navbar-toggler-icon"></span></button>
+         </div>
+         <ul class="nav flex-column ">
+           <li class="nav-item mb-4 mt-3"><a class="nav-link text-white active" href="#"><span class="pe-2"><i class="fa-solid fa-house"></i></span>  Dashboard</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-plus"></i></span>  Add task</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-regular fa-clipboard"></i></span>  Tasks</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-comment"></i></span>  Chats</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-list-check"></i></span>  To-Do list</a></li>
+           <li class="nav-item mb-4"><a class="nav-link text-white" href="#"> <span class="pe-2"><i class="fa-solid fa-alarm-clock"></i></span>  Timer</a></li>
+  
+         </ul>
+         <hr>
+          <div >
+          <ul class=" nav  flex-column list-unstyled">
+            
+            <li class="nav-item mb-2 "><a class="nav-link text-white " href="#"><span class="pe-2"><i class="fa-solid fa-circle-user"></i></span> Profile</a> </li>
+            <li class="nav-item mb-2 "><a class="nav-link text-white" href="#"><span class="pe-2"><i class="fa-solid fa-gear"></i></span> Settings</a></li>
+            <li class="nav-item mb-2 "><a class="nav-link text-white" href="#"><span class="pe-2"><i class="fa-solid fa-arrow-right-from-bracket"></i></span> Log out</a></li>
+
+          </ul>
+          </div>
+       </aside>
+    </div> 
+     
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html> 
