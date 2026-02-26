@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #045c3f 0%, #156b4e 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff2e1;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-section {
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.form-section {
+    flex: 1;
+    padding: 50px 40px;
+}
+
+h1 {
+    color: #0b7441;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: left;
+}
+
+.subtitle {
+    color: #0b7441;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0b7441;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s;
+    text-align: left;
+}
+
+input:focus {
+    outline: none;
+    border-color: #066939;
+    box-shadow: 0 0 0 2px #feedd3;
+}
+
+.create-account-btn {
+    background-color: #09603a; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+.create-account-btn:hover {
+    background-color: #1f7042; 
+}
+
+
+button:active {
+    transform: translateY(0);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #0b7441;
+    font-size: 16px;
+}
+
+.login-link a {
+    color: #13753d;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+    text-align: left;
+}
+
+.success-message {
+    background: #096137;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        padding: 20px;
+    }
+
+    .form-section {
+        padding: 30px 20px;
+    }
+}

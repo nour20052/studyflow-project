@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="signup.jpeg" alt="Sign Up Illustration">
+        </div>
+        
+        <div class="form-section">
+            <h1>Sign Up</h1>
+            <p class="subtitle">Create New Account</p>
+            
+            <div class="success-message" id="successMessage">
+               ✅ Account Created Succesfully
+            </div>
+
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    <div class="error-message" id="nameError">Please enter your name</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com">
+                    <div class="error-message" id="emailError">Please enter a valid email address</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="********">
+                    <div class="error-message" id="passwordError">Password must be at least 6 characters long</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="********">
+                    <div class="error-message" id="confirmError">Password do not match</div>
+                </div>
+
+               <button type="submit" class="create-account-btn">
+Create Account
+</button>
+            </form>
+
+            <div class="login-link">
+                Already have an account? <a href="login.html">Log in here</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
