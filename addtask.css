@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
     display: flex;
     height: 100vh;
-    background-color: #e0e0ec24;
+    background-color: #f4f6f9;
     color: #333;
 }
 
@@ -41,7 +41,7 @@ body {
 }
 
 .sidebar {
-    width: 270px;
+    width: 260px;
     background-color: #ffffff;
     color: #107a57;
     display: flex;
@@ -52,6 +52,7 @@ body {
 }
 
 .logo h2 {
+    margin-top:20px ;
     text-align: left;
     margin-bottom: 30px;
     color: #089767;
@@ -61,6 +62,8 @@ body {
 
 .menu {
     list-style: none;
+    margin-top: 15px;
+    margin-bottom: 0;
 }
 
 .menu li {
@@ -90,6 +93,7 @@ body {
 .sidebar-bottom {
     border-top: 1px solid #999;
     padding-top: 0px;
+    
 }
 
 .main-content {
