@@ -24,7 +24,6 @@ body {
     height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #2d5a3d;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -64,6 +63,7 @@ body {
     list-style: none;
     margin-top: 15px;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 .menu li {

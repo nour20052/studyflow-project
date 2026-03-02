@@ -1,11 +1,12 @@
+*{
+  font-family: Arial, sans-serif;
+}
 body{
  margin: 0;
 }
 a{
     text-decoration: none;
-    
 }
-
 .logo{
     color:#089767;
     font-size:24px ;
@@ -17,34 +18,58 @@ a{
   height: 40px;
   border-radius: 50%;
   border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 aside{
     background-color: white;
-    min-height: 87vh;
+    min-height: 99vh;
 }
 .side{
   color: #089767;
 }
 hr{
-  margin-top: 100px;
+  margin-top: 230px;
   width: 100%;
   color: #999;
 }
-
-.side-dash{
+.side-active{
     color: white;
     transform:translateY(8px);
     background-color:#067c55;
     border-radius: 10px;
 }
-
-
+.nav-link{
+   border-radius: 10px;
+}
 .nav-link:hover{
-    color: white;
-    transform:translateY(8px);
-    background-color:#067c55;
-    border-radius: 10px;
     
+    transform:translateY(8px);
+    background-color:#067c55 ;
+    color: white ;
+}
+.mobile-sidebar{
+  width: 70% !important; 
+  max-width: 300px;
+  border-radius: 0 20px 20px 0;
+}
+
+
+.offcanvas-backdrop.show{
+  opacity: 0.3;
+}
+
+
+.offcanvas{
+  transition: transform 0.3s ease-in-out;
+}
+.menu-btn{
+ color: #067c55;
+}
+.offcanvas .nav-link:hover{
+   transform:translateY(8px);
+   background-color:#067c55 ;
+   color: white !important;
 }
 .welcome{
   background-color:#20a43d86;
@@ -318,7 +343,7 @@ hr{
   font-size:12px;
   color:#888;
 }
-
+  /* login */
  .login-page{
     background-color:rgba(241, 241, 209, 0.647);
 }
@@ -431,6 +456,166 @@ hr{
 }
 
 
+/* timer */
+
+
+
+.main-timer{
+min-height: 100vh;
+}
+ .circle{
+      width: clamp(180px, 35vw, 280px);
+    }
+
+    #time{
+      font-size: clamp(28px, 6vw, 52px);
+      letter-spacing: 1px;
+    }
+
+    .timer-card{
+      margin: auto;
+      width: min(520px, 100%);
+      background: #e7ebcd;
+      box-shadow: 0 5px 15px #dee4b7;
+      border-radius: 20px;
+    }
+    .btn-start{
+    background: linear-gradient(135deg, #155e46, #11a775);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+    }
+    .btn-start:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px #067c55;
+    color: white;
+    }
+    
+    .btn-pause{
+    background: linear-gradient(135deg, #538d22, #73a942);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+    }
+    .btn-pause:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px #067c55;
+    color: white;
+    }
+    .btn-reset{
+    background: linear-gradient(135deg, #6b6a52, #989873);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+    }
+    .btn-reset:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px #989873;
+    color: white;
+    }
+    .time-btn{
+    background-color:rgb(241, 252, 221) ;
+    border: 1px solid #089767;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+    }
+   
+
+   /* chat */
+   .main-chat{
+    min-height: 100vh;
+   }
+   .search-bar{
+    margin-left:25%;
+   
+   }
+   .input-group-text{
+    background-color: #067c55;
+    color: white;
+   }
+   .chat-content{
+    margin-top: 20%;
+   }
+   .btn-invite{
+     background: linear-gradient(135deg, #155e46, #11a775);
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-left:45%;
+   }
+    .btn-invite:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px #067c55;
+    color: white;
+    }
+    .search-control:focus{
+     background-color:transparent ;
+    box-shadow: none;
+    border-color: #067c55;
+    }
+
+/* logout */
+.study-modal{
+  border-radius: 18px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.18);
+  overflow: hidden;
+}
+
+
+.study-modal .modal-body{
+  background: linear-gradient(180deg, rgba(66, 193, 68, 0.08), rgba(255,255,255,1) 55%);
+}
+
+
+.study-icon{
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:rgba(85, 193, 66, 0.12);
+  color: #067c55;
+  font-size: 22px;
+}
+
+
+.study-cancel{
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.study-logout{
+  border-radius: 12px;
+  color: #fff;
+  background: linear-gradient(90deg, #067c55, #089767);
+  border: 0;
+}
+
+.study-logout:hover{
+  color: white;
+  filter: brightness(0.95);
+  transform: translateY(-3px);
+}
+
+.study-logout:active{
+  transform: translateY(0);
+}
+
+
 
  @media (max-width: 992px) {
       aside {
@@ -449,22 +634,21 @@ hr{
       border-radius: 10px;
     
       }
-      
-
+      hr{
+      margin-top: 160px;
+      width: 100%;
+      color: #999;
+      }
       .item{
         margin-top: 20px;
       }
-      .welcome p{
-        width: 70%;
-      }
+      
       .welcome-img{
         width: 30%;
         right: 1%;
         bottom: 0%;
       }
-      .profile-img{
-        display: none;
-      }
+      
       .card-goal{
         width: 45%;
       }
@@ -481,12 +665,21 @@ hr{
         display: flex;
         flex-wrap: wrap;
       }
+     .timer-card{
+      margin: auto;
+     }
+     .chat-content{
+    margin-top: 35%;
+   }
+    .btn-invite{
+      margin-left:40%;
+    }
        
       
 
     }
-
-    @media (max-width: 768px) {
+    
+    @media (max-width: 767px) {
       .welcome-img{
        position: static;
        display: block;
@@ -526,6 +719,13 @@ hr{
       .slide{
          margin-left: 20%;
       }
+        .chat-content{
+       margin-top: 50%;
+       }
+        .btn-invite{
+      margin-left:30%;
+    }
+       
       
     }
      @media (max-width: 389px){
@@ -545,6 +745,7 @@ hr{
         font-size: 13px;
         gap: 6px;
     }
+  
 }
      
 

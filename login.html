@@ -22,39 +22,59 @@
 
            
 
-            <form action="dashboard.html">
+           <form id="loginForm" action="dashboard.html">
 
-                <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="Enter your email">
-                </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input 
+            type="email" 
+            class="form-control" 
+            id="loginEmail"
+            placeholder="Enter your email">
 
-                <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" class="form-control" placeholder="password">
-                </div>
+        <div id="loginEmailError" class="error-message text-danger" style="display:none;">
+            Please enter a valid email
+        </div>
+    </div>
 
-                <div class="form-check mb-3">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label">
-                        I agree to Terms & Conditions
-                    </label>
-                </div>
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input 
+            type="password" 
+            class="form-control" 
+            id="loginPassword"
+            placeholder="password">
 
-                <button class="login-btn" type="submit">
-                    Login
-                </button>
-                <div class="divider">
-                  <span>Or continue</span>
-                </div>
-                <button class="google-btn">
-                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20">
-                  Log in with Google
-                </button>
+        <div id="loginPasswordError" class="error-message text-danger" style="display:none;">
+            Password must be at least 6 characters
+        </div>
+    </div>
 
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="termsCheck">
+        <label class="form-check-label" for="termsCheck">
+            I agree to Terms & Conditions
+        </label>
+    </div>
 
+    <div id="loginSuccessMessage" class="text-success mb-3" style="display:none;">
+        Login successful! Redirecting...
+    </div>
 
-            </form>
+    <button class="login-btn w-100" type="submit">
+        Login
+    </button>
+
+    <div class="divider">
+        <span>Or continue</span>
+    </div>
+
+    <button type="button" class="google-btn w-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20">
+        Log in with Google
+    </button>
+
+</form>
 
         </div>
 
@@ -67,11 +87,8 @@
 
 </div>
 </main>
-
+<script src="js/login.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
-    <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
